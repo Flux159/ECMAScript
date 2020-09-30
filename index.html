@@ -1,0 +1,401 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>godot-ecmascript</title>
+	<meta name="description" content="Documentation for godot-ecmascript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">godot-ecmascript</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>godot-ecmascript</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#javascript-language-binding-for-godot-game-engine" id="javascript-language-binding-for-godot-game-engine" style="color: inherit; text-decoration: none;">
+					<h2>JavaScript language binding for godot game engine</h2>
+				</a>
+				<p>This module implements JavaScript/TypeScript language support for the godot game engine. <a href="https://bellard.org/quickjs/">QuickJS</a> is used as the ECMAScript engine.</p>
+				<hr>
+				<a href="#features" id="features" style="color: inherit; text-decoration: none;">
+					<h3>Features</h3>
+				</a>
+				<ul>
+					<li>Almost complete ES2020 support</li>
+					<li>All godot api avaliable</li>
+					<li>Operator overriding for builtin types (Vector3, Color, etc)</li>
+					<li>Using thirdpart libraries directly from npm</li>
+					<li>Multi-thread support with Worker API</li>
+					<li>Full TypeScript workflow support</li>
+					<li>Full code completion support for all godot APIs including signals and enumerations</li>
+					<li>Debug in Visual Studio Code with the <a href="https://marketplace.visualstudio.com/items?itemName=geequlim.godot-javascript-debug">plugin</a></li>
+				</ul>
+				<a href="#download" id="download" style="color: inherit; text-decoration: none;">
+					<h3>Download</h3>
+				</a>
+				<p>You can try the pre-compiled binaries from the <a href="https://github.com/GodotExplorer/ECMAScript/releases">release page</a><br>You can also get the binaries with lastest commits from the <a href="https://github.com/GodotExplorer/ECMAScript/actions">github build action result</a></p>
+				<a href="#compilation" id="compilation" style="color: inherit; text-decoration: none;">
+					<h3>Compilation</h3>
+				</a>
+				<ul>
+					<li>Clone the source code of <a href="https://github.com/godotengine/godot">godot</a></li>
+					<li>Clone this module and put it into <code>godot/modules/</code> and make sure the folder name of this module is <code>ECMAScript</code></li>
+					<li><a href="https://docs.godotengine.org/en/3.2/development/compiling/index.html">Recompile the godot engine</a> <b>(Only MinGW is supported on Windows for now!)</b></li>
+				</ul>
+				<p><img src="https://github.com/GodotExplorer/ECMAScript/workflows/Build%20Godot%20with%20ECMAScript/badge.svg" alt="Build Godot with ECMAScript"></p>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h3>Usage</h3>
+				</a>
+				<a href="#how-to-export-script-class-to-godot" id="how-to-export-script-class-to-godot" style="color: inherit; text-decoration: none;">
+					<h5>How to export script class to godot</h5>
+				</a>
+				<ol>
+					<li><p>Define your ECMAScript class and inherit from a godot class then export it as the <strong>default</strong> entry</p>
+						<pre><code class="language-js"><span class="hljs-comment">// The default export entry is treated as an exported class to godot</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySprite</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">godot</span>.<span class="hljs-title">Sprite</span> </span>{
+
+ <span class="hljs-comment">// this is _init() in GDScript</span>
+ <span class="hljs-keyword">constructor</span>() {
+     <span class="hljs-built_in">super</span>();
+ }
+
+ _ready() {
+
+ }
+
+ _process(delta) {
+
+ }
+}</code></pre>
+					</li>
+					<li><p>Save the script with extension <code>.jsx</code></p>
+					</li>
+					<li><p>Attach the script file to the node or resource object like you do with GDScript</p>
+					</li>
+				</ol>
+				<a href="#how-to-export-signals" id="how-to-export-signals" style="color: inherit; text-decoration: none;">
+					<h5>How to export signals</h5>
+				</a>
+				<pre><code class="language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySprite</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">godot</span>.<span class="hljs-title">Sprite</span> </span>{};
+<span class="hljs-comment">// register game_over signal to MySprite class</span>
+godot.register_signal(MySprite, <span class="hljs-string">&#x27;game_over&#x27;</span>);</code></pre>
+				<a href="#how-to-export-properties" id="how-to-export-properties" style="color: inherit; text-decoration: none;">
+					<h5>How to export properties</h5>
+				</a>
+				<pre><code class="language-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySprite</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">godot</span>.<span class="hljs-title">Sprite</span> </span>{
+    _process(delta) {
+        <span class="hljs-comment">// Yes! We can use operators in JavaScript like GDScript</span>
+        <span class="hljs-built_in">this</span>.position += <span class="hljs-built_in">this</span>.direction * delta;
+    }
+};
+<span class="hljs-comment">// export &#x27;direction&#x27; properties to MySprite godot inspector</span>
+godot.register_property(MySprite, <span class="hljs-string">&#x27;direction&#x27;</span>, <span class="hljs-keyword">new</span> godot.Vector2(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>));</code></pre>
+				<a href="#about-the-api" id="about-the-api" style="color: inherit; text-decoration: none;">
+					<h4>About the API</h4>
+				</a>
+				<p>All of godots api&#39;s are defined within the <code>godot</code> namespace.</p>
+				<p>No API names have been renamed or changed so you shouldn&#39;t need to change your habits.</p>
+				<table>
+					<thead>
+						<tr>
+							<th>GDScript</th>
+							<th>ECMAScript</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td>null</td>
+							<td>null</td>
+						</tr>
+						<tr>
+							<td>int</td>
+							<td>number</td>
+						</tr>
+						<tr>
+							<td>float</td>
+							<td>number</td>
+						</tr>
+						<tr>
+							<td>String</td>
+							<td>string</td>
+						</tr>
+						<tr>
+							<td>Array</td>
+							<td>Array</td>
+						</tr>
+						<tr>
+							<td>Dictionary</td>
+							<td>Object</td>
+						</tr>
+						<tr>
+							<td>NodePath</td>
+							<td>string</td>
+						</tr>
+						<tr>
+							<td>Object</td>
+							<td>godot.Object</td>
+						</tr>
+						<tr>
+							<td>Resource</td>
+							<td>godot.Resource</td>
+						</tr>
+						<tr>
+							<td>Vector2</td>
+							<td>godot.Vecotor2</td>
+						</tr>
+						<tr>
+							<td>Color</td>
+							<td>godot.Color</td>
+						</tr>
+						<tr>
+							<td>sin(v)</td>
+							<td>godot.sin(v)</td>
+						</tr>
+						<tr>
+							<td>print(v)</td>
+							<td>godot.print(v)</td>
+						</tr>
+						<tr>
+							<td>PI</td>
+							<td>godot.PI</td>
+						</tr>
+						<tr>
+							<td>Color.black</td>
+							<td>godot.Color.black</td>
+						</tr>
+						<tr>
+							<td>Control.CursorShape</td>
+							<td>godot.Control.CursorShape</td>
+						</tr>
+						<tr>
+							<td>Label.Align.ALIGN_LEFT</td>
+							<td>godot.Label.Align.ALIGN_LEFT</td>
+						</tr>
+				</tbody></table>
+				<a href="#api-specification" id="api-specification" style="color: inherit; text-decoration: none;">
+					<h5>API specification:</h5>
+				</a>
+				<ul>
+					<li><p>Keys of Dictionary are converted to String in JavaScript</p>
+					</li>
+					<li><p>Signals are defined as constants to its classes</p>
+						<pre><code><span class="hljs-attr">godot.Control.resized</span> === <span class="hljs-string">&#x27;resized&#x27;</span> // <span class="hljs-literal">true</span></code></pre>
+					</li>
+					<li><p>Additional functions</p>
+						<ul>
+							<li><code>godot.register_signal(cls, signal_name)</code> to register signals</li>
+							<li><code>godot.register_property(cls, name, default_value)</code> to define and export properties</li>
+							<li><code>godot.register_class(cls, name)</code> to register named class manually</li>
+							<li><code>godot.set_script_tooled(cls, tooled)</code> to set <code>tooled</code> of the class</li>
+							<li><code>godot.set_script_icon(cls, path)</code> to set icon of the class</li>
+							<li><code>godot.get_type(val)</code> Returns the internal type of the given <code>Variant</code> object, using the <code>godot.TYPE_*</code></li>
+							<li><code>godot.yield(target, signal)</code> Returns a Promise which will be resolved when the signal emitted</li>
+							<li><code>requestAnimationFrame(callback)</code> registers a callback function to be called every frame, returns a request ID.</li>
+							<li><code>cancelAnimationFrame(request_id)</code> to cancel a previously scheduled frame request</li>
+							<li><code>require(module_id)</code> to load a CommonJS module or load a resource file</li>
+							<li><code>$</code> is the alias of <code>Node.get_node</code></li>
+						</ul>
+					</li>
+					<li><p>Using signals in the ECMAScript way</p>
+						<ul>
+							<li>Allow passing functions for <code>godot.Object.connect</code>, <code>godot.Object.disconnect</code> and <code>godot.Object.is_connected</code><pre><code class="language-js">    <span class="hljs-built_in">this</span>.panel.connect(godot.Control.resized, <span class="hljs-function">(<span class="hljs-params">size</span>) =&gt;</span> {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;The size of the panel changed to:&#x27;</span>, size);
+    });</code></pre>
+							</li>
+							<li>Using <code>await</code> to wait signals<pre><code class="language-js"><span class="hljs-keyword">await</span> godot.yield(<span class="hljs-built_in">this</span>.get_tree().create_timer(<span class="hljs-number">1</span>), godot.SceneTreeTimer.timeout);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;After one second to show&#x27;</span>);</code></pre>
+							</li>
+						</ul>
+					</li>
+					<li><p>Preload resources with ECMAScript import statement</p>
+						<pre><code class="language-js"><span class="hljs-keyword">import</span> ICON <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;res://icon.png&#x27;</span>;</code></pre>
+					</li>
+					<li><p>Multi-threading with minimal <a href="https://developer.mozilla.org/en-US/docs/Web/API/Worker">Worker API</a> (<strong>This is an experimental feature</strong>)</p>
+						<ul>
+							<li><p>Start a new thread with Worker</p>
+								<pre><code class="language-js"><span class="hljs-keyword">const</span> worker = <span class="hljs-keyword">new</span> Worker(<span class="hljs-string">&#x27;worker.js&#x27;</span>); <span class="hljs-comment">// Run worker.js in a new thread context</span>
+worker.postMessage({<span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;load_dlc&#x27;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&#x27;dlc01.pck&#x27;</span>});
+worker.onmessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;[MainThread] received message from worker thread:&quot;</span>, msg);
+}</code></pre>
+							</li>
+							<li><p>Transfer value in different thread context with <code>godot.abandon_value</code> and <code>godot.adopt_value</code></p>
+								<pre><code class="language-js"><span class="hljs-comment">// In worker thread</span>
+<span class="hljs-keyword">let</span> id = godot.abandon_value(object);
+postMessage({ <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;return_value&#x27;</span>, <span class="hljs-attr">id</span>: id });
+
+<span class="hljs-comment">// In the host thread</span>
+worker.onmessage = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">msg</span>) </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> msg === <span class="hljs-string">&#x27;object&#x27;</span> &amp;&amp; msg.type === <span class="hljs-string">&#x27;return_value&#x27;</span>) {
+        <span class="hljs-keyword">let</span> value_from_worker = godot.adopt_value(msg.id);
+    }
+}</code></pre>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<a href="#typescript-support" id="typescript-support" style="color: inherit; text-decoration: none;">
+					<h3>TypeScript support</h3>
+				</a>
+				<ul>
+					<li>Run the menu command <code>Project &gt; Tools &gt; ECMAScript &gt; Generate TypeScript Project</code> from the godot editor to generate a TypeScript project</li>
+					<li>Run <code>tsc -w -p .</code> under your project folder in the terminal to compile scripts</li>
+				</ul>
+				<a href="#example-typescript-usage" id="example-typescript-usage" style="color: inherit; text-decoration: none;">
+					<h4>Example TypeScript Usage</h4>
+				</a>
+				<p>Make sure the file with extension &#39;.tsx&#39; so it can be compiled to a <code>.jsx</code> file then we can attach it to a node in godot editor.</p>
+				<p>Most of the <code>register</code> functions are available as various decorators as seen below.</p>
+				<pre><code class="language-ts"><span class="hljs-keyword">import</span> { signal, property, tool, onready, node } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;./decorators&quot;</span>;
+
+<span class="hljs-meta">@tool</span> <span class="hljs-comment">// make the script runnable in godot editor</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> InputLine <span class="hljs-keyword">extends</span> godot.HBoxContainer {
+
+    <span class="hljs-comment">// define a signal</span>
+    <span class="hljs-meta">@signal</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">readonly</span> OnTextChanged: <span class="hljs-built_in">string</span>;
+
+    <span class="hljs-comment">// expose a node property</span>
+    <span class="hljs-meta">@node</span>
+    icon: godot.Sprite;
+
+    <span class="hljs-comment">// register offset property with the godot inspector with default value of Vector2(0, 0)</span>
+    <span class="hljs-meta">@property</span>({ <span class="hljs-keyword">default</span>: godot.Vector2.ZERO })
+    offset: godot.Vector2;
+
+    <span class="hljs-comment">// register properties for godot editor inspector</span>
+    <span class="hljs-meta">@property</span>({ <span class="hljs-keyword">type</span>: godot.VariantType.TYPE_STRING })
+    get title() { <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>._title; }
+    set title(v: <span class="hljs-built_in">string</span>) {
+        <span class="hljs-built_in">this</span>._title = v;
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>._label) {
+            <span class="hljs-built_in">this</span>._label.text = v;
+        }
+    }
+    <span class="hljs-keyword">private</span> _title: <span class="hljs-built_in">string</span>;
+
+    <span class="hljs-meta">@property</span>({ <span class="hljs-keyword">default</span>: <span class="hljs-string">&quot;Input text here&quot;</span> })
+    get hint() { <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>._hint; }
+    set hint(v: <span class="hljs-built_in">string</span>) {
+        <span class="hljs-built_in">this</span>._hint = v;
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.edit) {
+            <span class="hljs-built_in">this</span>.edit.hint_tooltip = v;
+            <span class="hljs-built_in">this</span>.edit.placeholder_text = v;
+        }
+    }
+    <span class="hljs-keyword">private</span> _hint: <span class="hljs-built_in">string</span>;
+
+    get label(): godot.Label { <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>._label; }
+    <span class="hljs-keyword">protected</span> _label: godot.Label;
+
+    <span class="hljs-comment">// call get_node(&#x27;LineEdit&#x27;) and assign the returned value to &#x27;this.edit&#x27; automatically when the node is ready</span>
+    <span class="hljs-meta">@onready</span>(<span class="hljs-string">&#x27;LineEdit&#x27;</span>)
+    edit: godot.LineEdit;
+
+    get text(): <span class="hljs-built_in">string</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.edit?.text;
+    }
+
+    _ready() {
+        <span class="hljs-comment">// get first child with the type of godot.Label</span>
+        <span class="hljs-built_in">this</span>._label = <span class="hljs-built_in">this</span>.get_node(godot.Label);
+
+        <span class="hljs-comment">// Apply the inspector filled values with property setters</span>
+        <span class="hljs-built_in">this</span>.title = <span class="hljs-built_in">this</span>.title;
+        <span class="hljs-built_in">this</span>.hint = <span class="hljs-built_in">this</span>.hint;
+
+        <span class="hljs-built_in">this</span>.edit.connect(godot.LineEdit.text_changed, <span class="hljs-function">(<span class="hljs-params">text: <span class="hljs-built_in">string</span></span>)=&gt;</span>{
+            <span class="hljs-built_in">this</span>.emit_signal(InputLine.OnTextChanged, text);
+        });
+    }
+}</code></pre>
+				<a href="#demo" id="demo" style="color: inherit; text-decoration: none;">
+					<h2>Demo</h2>
+				</a>
+				<p>You can try demos in the <a href="https://github.com/Geequlim/ECMAScriptDemos">ECMAScriptDemos</a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_godot_d_.html">&quot;godot.d&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

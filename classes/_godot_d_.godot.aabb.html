@@ -1,0 +1,995 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AABB | godot-ecmascript</title>
+	<meta name="description" content="Documentation for godot-ecmascript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">godot-ecmascript</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_godot_d_.html">&quot;godot.d&quot;</a>
+				</li>
+				<li>
+					<a href="../modules/_godot_d_.godot.html">godot</a>
+				</li>
+				<li>
+					<a href="_godot_d_.godot.aabb.html">AABB</a>
+				</li>
+			</ul>
+			<h1>Class AABB</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Axis-Aligned Bounding Box.
+						AABB consists of a position, a size, and several utility functions. It is typically used for fast overlap tests.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">AABB</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#end" class="tsd-kind-icon">end</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#position" class="tsd-kind-icon">position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#size" class="tsd-kind-icon">size</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#encloses" class="tsd-kind-icon">encloses</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#expand" class="tsd-kind-icon">expand</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_area" class="tsd-kind-icon">get_<wbr>area</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_endpoint" class="tsd-kind-icon">get_<wbr>endpoint</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_longest_axis" class="tsd-kind-icon">get_<wbr>longest_<wbr>axis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_longest_axis_index" class="tsd-kind-icon">get_<wbr>longest_<wbr>axis_<wbr>index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_longest_axis_size" class="tsd-kind-icon">get_<wbr>longest_<wbr>axis_<wbr>size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_shortest_axis" class="tsd-kind-icon">get_<wbr>shortest_<wbr>axis</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_shortest_axis_index" class="tsd-kind-icon">get_<wbr>shortest_<wbr>axis_<wbr>index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_shortest_axis_size" class="tsd-kind-icon">get_<wbr>shortest_<wbr>axis_<wbr>size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#get_support" class="tsd-kind-icon">get_<wbr>support</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#grow" class="tsd-kind-icon">grow</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#has_no_area" class="tsd-kind-icon">has_<wbr>no_<wbr>area</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#has_no_surface" class="tsd-kind-icon">has_<wbr>no_<wbr>surface</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#has_point" class="tsd-kind-icon">has_<wbr>point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#intersection" class="tsd-kind-icon">intersection</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#intersects" class="tsd-kind-icon">intersects</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#intersects_plane" class="tsd-kind-icon">intersects_<wbr>plane</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#intersects_segment" class="tsd-kind-icon">intersects_<wbr>segment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#is_equal_approx" class="tsd-kind-icon">is_<wbr>equal_<wbr>approx</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.aabb.html#merge" class="tsd-kind-icon">merge</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new AABB<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></li>
+						<li class="tsd-signature tsd-kind-icon">new AABB<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">?: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a>, size<span class="tsd-signature-symbol">?: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1805">godot.d.ts:1805</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1807">godot.d.ts:1807</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> position: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> size: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="end" class="tsd-anchor"></a>
+					<h3>end</h3>
+					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1817">godot.d.ts:1817</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Ending corner.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="position" class="tsd-anchor"></a>
+					<h3>position</h3>
+					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1811">godot.d.ts:1811</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Beginning corner.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1814">godot.d.ts:1814</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Size from position to end.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="encloses" class="tsd-anchor"></a>
+					<h3>encloses</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">encloses<span class="tsd-signature-symbol">(</span>p_with<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1820">godot.d.ts:1820</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if this <code>AABB</code> completely encloses another one.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p_with: <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="expand" class="tsd-anchor"></a>
+					<h3>expand</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">expand<span class="tsd-signature-symbol">(</span>to_point<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1823">godot.d.ts:1823</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns this <code>AABB</code> expanded to include a given point.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>to_point: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_area" class="tsd-anchor"></a>
+					<h3>get_<wbr>area</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>area<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1826">godot.d.ts:1826</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the area of the <code>AABB</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_endpoint" class="tsd-anchor"></a>
+					<h3>get_<wbr>endpoint</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>endpoint<span class="tsd-signature-symbol">(</span>idx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1829">godot.d.ts:1829</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the position of the 8 endpoints of the <code>AABB</code> in space.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>idx: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_longest_axis" class="tsd-anchor"></a>
+					<h3>get_<wbr>longest_<wbr>axis</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>longest_<wbr>axis<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1832">godot.d.ts:1832</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the normalized longest axis of the <code>AABB</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_longest_axis_index" class="tsd-anchor"></a>
+					<h3>get_<wbr>longest_<wbr>axis_<wbr>index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>longest_<wbr>axis_<wbr>index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1835">godot.d.ts:1835</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the longest axis of the <code>AABB</code> (according to <code>Vector3</code>::AXIS* enum).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_longest_axis_size" class="tsd-anchor"></a>
+					<h3>get_<wbr>longest_<wbr>axis_<wbr>size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>longest_<wbr>axis_<wbr>size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1838">godot.d.ts:1838</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the scalar length of the longest axis of the <code>AABB</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_shortest_axis" class="tsd-anchor"></a>
+					<h3>get_<wbr>shortest_<wbr>axis</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>shortest_<wbr>axis<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1841">godot.d.ts:1841</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the normalized shortest axis of the <code>AABB</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_shortest_axis_index" class="tsd-anchor"></a>
+					<h3>get_<wbr>shortest_<wbr>axis_<wbr>index</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>shortest_<wbr>axis_<wbr>index<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1844">godot.d.ts:1844</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the index of the shortest axis of the <code>AABB</code> (according to <code>Vector3</code>::AXIS* enum).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_shortest_axis_size" class="tsd-anchor"></a>
+					<h3>get_<wbr>shortest_<wbr>axis_<wbr>size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>shortest_<wbr>axis_<wbr>size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1847">godot.d.ts:1847</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the scalar length of the shortest axis of the <code>AABB</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_support" class="tsd-anchor"></a>
+					<h3>get_<wbr>support</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>support<span class="tsd-signature-symbol">(</span>dir<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1850">godot.d.ts:1850</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the support point in a given direction. This is useful for collision detection algorithms.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dir: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="grow" class="tsd-anchor"></a>
+					<h3>grow</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">grow<span class="tsd-signature-symbol">(</span>by<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1853">godot.d.ts:1853</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a copy of the <code>AABB</code> grown a given amount of units towards all the sides.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>by: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="has_no_area" class="tsd-anchor"></a>
+					<h3>has_<wbr>no_<wbr>area</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has_<wbr>no_<wbr>area<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1856">godot.d.ts:1856</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>AABB</code> is flat or empty.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="has_no_surface" class="tsd-anchor"></a>
+					<h3>has_<wbr>no_<wbr>surface</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has_<wbr>no_<wbr>surface<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1859">godot.d.ts:1859</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>AABB</code> is empty.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="has_point" class="tsd-anchor"></a>
+					<h3>has_<wbr>point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has_<wbr>point<span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1862">godot.d.ts:1862</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>AABB</code> contains a point.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>point: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="intersection" class="tsd-anchor"></a>
+					<h3>intersection</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">intersection<span class="tsd-signature-symbol">(</span>p_with<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1865">godot.d.ts:1865</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the intersection between two <code>AABB</code>. An empty AABB (size 0,0,0) is returned on failure.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p_with: <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="intersects" class="tsd-anchor"></a>
+					<h3>intersects</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">intersects<span class="tsd-signature-symbol">(</span>p_with<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1868">godot.d.ts:1868</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>AABB</code> overlaps with another.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p_with: <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="intersects_plane" class="tsd-anchor"></a>
+					<h3>intersects_<wbr>plane</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">intersects_<wbr>plane<span class="tsd-signature-symbol">(</span>plane<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.plane.html" class="tsd-signature-type">Plane</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1871">godot.d.ts:1871</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>AABB</code> is on both sides of a plane.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>plane: <a href="_godot_d_.godot.plane.html" class="tsd-signature-type">Plane</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="intersects_segment" class="tsd-anchor"></a>
+					<h3>intersects_<wbr>segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">intersects_<wbr>segment<span class="tsd-signature-symbol">(</span>p_from<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a>, to<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1874">godot.d.ts:1874</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if the <code>AABB</code> intersects the line segment between <code>from</code> and <code>to</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p_from: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+								<li>
+									<h5>to: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="is_equal_approx" class="tsd-anchor"></a>
+					<h3>is_<wbr>equal_<wbr>approx</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is_<wbr>equal_<wbr>approx<span class="tsd-signature-symbol">(</span>aabb<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1877">godot.d.ts:1877</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>aabb: <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="merge" class="tsd-anchor"></a>
+					<h3>merge</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>p_with<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1880">godot.d.ts:1880</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a larger AABB that contains this AABB and <code>with</code>.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p_with: <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.aabb.html" class="tsd-signature-type">AABB</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.aabb.html" class="tsd-kind-icon">AABB</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#end" class="tsd-kind-icon">end</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#position" class="tsd-kind-icon">position</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#size" class="tsd-kind-icon">size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#encloses" class="tsd-kind-icon">encloses</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#expand" class="tsd-kind-icon">expand</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_area" class="tsd-kind-icon">get_<wbr>area</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_endpoint" class="tsd-kind-icon">get_<wbr>endpoint</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_longest_axis" class="tsd-kind-icon">get_<wbr>longest_<wbr>axis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_longest_axis_index" class="tsd-kind-icon">get_<wbr>longest_<wbr>axis_<wbr>index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_longest_axis_size" class="tsd-kind-icon">get_<wbr>longest_<wbr>axis_<wbr>size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_shortest_axis" class="tsd-kind-icon">get_<wbr>shortest_<wbr>axis</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_shortest_axis_index" class="tsd-kind-icon">get_<wbr>shortest_<wbr>axis_<wbr>index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_shortest_axis_size" class="tsd-kind-icon">get_<wbr>shortest_<wbr>axis_<wbr>size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#get_support" class="tsd-kind-icon">get_<wbr>support</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#grow" class="tsd-kind-icon">grow</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#has_no_area" class="tsd-kind-icon">has_<wbr>no_<wbr>area</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#has_no_surface" class="tsd-kind-icon">has_<wbr>no_<wbr>surface</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#has_point" class="tsd-kind-icon">has_<wbr>point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#intersection" class="tsd-kind-icon">intersection</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#intersects" class="tsd-kind-icon">intersects</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#intersects_plane" class="tsd-kind-icon">intersects_<wbr>plane</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#intersects_segment" class="tsd-kind-icon">intersects_<wbr>segment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#is_equal_approx" class="tsd-kind-icon">is_<wbr>equal_<wbr>approx</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.aabb.html#merge" class="tsd-kind-icon">merge</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.basis.html" class="tsd-kind-icon">Basis</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.color.html" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.plane.html" class="tsd-kind-icon">Plane</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolbytearray.html" class="tsd-kind-icon">Pool<wbr>Byte<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolcolorarray.html" class="tsd-kind-icon">Pool<wbr>Color<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolintarray.html" class="tsd-kind-icon">Pool<wbr>Int<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolrealarray.html" class="tsd-kind-icon">Pool<wbr>Real<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolstringarray.html" class="tsd-kind-icon">Pool<wbr>String<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolvector2array.html" class="tsd-kind-icon">Pool<wbr>Vector2<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolvector3array.html" class="tsd-kind-icon">Pool<wbr>Vector3<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.quat.html" class="tsd-kind-icon">Quat</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.rid.html" class="tsd-kind-icon">RID</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.rect2.html" class="tsd-kind-icon">Rect2</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.transform.html" class="tsd-kind-icon">Transform</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.transform2d.html" class="tsd-kind-icon">Transform2D</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.vector2.html" class="tsd-kind-icon">Vector2</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.vector3.html" class="tsd-kind-icon">Vector3</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_godot_d_.godot.propertyinfo.html" class="tsd-kind-icon">Property<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#godotclass" class="tsd-kind-icon">Godot<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#debug_enabled" class="tsd-kind-icon">DEBUG_<wbr>ENABLED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#debug_methods_enabled" class="tsd-kind-icon">DEBUG_<wbr>METHODS_<wbr>ENABLED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#e" class="tsd-kind-icon">E</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#ln2" class="tsd-kind-icon">LN2</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#sqrt12" class="tsd-kind-icon">SQRT12</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#sqrt2" class="tsd-kind-icon">SQRT2</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#tools_enabled" class="tsd-kind-icon">TOOLS_<wbr>ENABLED</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#abandon_value" class="tsd-kind-icon">abandon_<wbr>value</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#adopt_value" class="tsd-kind-icon">adopt_<wbr>value</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#get_type" class="tsd-kind-icon">get_<wbr>type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#instance_from_id" class="tsd-kind-icon">instance_<wbr>from_<wbr>id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#load" class="tsd-kind-icon">load</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#register_class" class="tsd-kind-icon">register_<wbr>class</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#register_property" class="tsd-kind-icon">register_<wbr>property</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#register_signal" class="tsd-kind-icon">register_<wbr>signal</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#set_script_icon" class="tsd-kind-icon">set_<wbr>script_<wbr>icon</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#set_script_tooled" class="tsd-kind-icon">set_<wbr>script_<wbr>tooled</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#yield" class="tsd-kind-icon">yield</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

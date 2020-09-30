@@ -1,0 +1,903 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Quat | godot-ecmascript</title>
+	<meta name="description" content="Documentation for godot-ecmascript">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">godot-ecmascript</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_godot_d_.html">&quot;godot.d&quot;</a>
+				</li>
+				<li>
+					<a href="../modules/_godot_d_.godot.html">godot</a>
+				</li>
+				<li>
+					<a href="_godot_d_.godot.quat.html">Quat</a>
+				</li>
+			</ul>
+			<h1>Class Quat</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Quaternion.
+						A unit quaternion used for representing 3D rotations.</p>
+					</div>
+					<p>It is similar to <code>Basis</code>, which implements matrix representation of rotations, and can be parametrized using both an axis-angle pair or Euler angles. But due to its compactness and the way it is stored in memory, certain operations (obtaining axis-angle and performing SLERP, in particular) are more efficient and robust against floating-point errors.</p>
+					<p>Quaternions need to be (re)normalized.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Quat</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#w" class="tsd-kind-icon">w</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#x" class="tsd-kind-icon">x</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#y" class="tsd-kind-icon">y</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#z" class="tsd-kind-icon">z</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_godot_d_.godot.quat.html#identity" class="tsd-kind-icon">IDENTITY</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#cubic_slerp" class="tsd-kind-icon">cubic_<wbr>slerp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#dot" class="tsd-kind-icon">dot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#get_euler" class="tsd-kind-icon">get_<wbr>euler</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#inverse" class="tsd-kind-icon">inverse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#is_equal_approx" class="tsd-kind-icon">is_<wbr>equal_<wbr>approx</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#is_normalized" class="tsd-kind-icon">is_<wbr>normalized</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#length" class="tsd-kind-icon">length</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#length_squared" class="tsd-kind-icon">length_<wbr>squared</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#normalized" class="tsd-kind-icon">normalized</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#set_axis_angle" class="tsd-kind-icon">set_<wbr>axis_<wbr>angle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#set_euler" class="tsd-kind-icon">set_<wbr>euler</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#slerp" class="tsd-kind-icon">slerp</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#slerpni" class="tsd-kind-icon">slerpni</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_godot_d_.godot.quat.html#xform" class="tsd-kind-icon">xform</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quat<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quat<span class="tsd-signature-symbol">(</span>from<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.basis.html" class="tsd-signature-type">Basis</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quat<span class="tsd-signature-symbol">(</span>euler<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quat<span class="tsd-signature-symbol">(</span>axis<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a>, angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quat<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, z<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, w<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1734">godot.d.ts:1734</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1735">godot.d.ts:1735</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>from: <a href="_godot_d_.godot.basis.html" class="tsd-signature-type">Basis</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1736">godot.d.ts:1736</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>euler: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1737">godot.d.ts:1737</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>axis: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1738">godot.d.ts:1738</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> z: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> w: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="w" class="tsd-anchor"></a>
+					<h3>w</h3>
+					<div class="tsd-signature tsd-kind-icon">w<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1751">godot.d.ts:1751</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>W component of the quaternion.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="x" class="tsd-anchor"></a>
+					<h3>x</h3>
+					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1742">godot.d.ts:1742</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>X component of the quaternion.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="y" class="tsd-anchor"></a>
+					<h3>y</h3>
+					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1745">godot.d.ts:1745</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Y component of the quaternion.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="z" class="tsd-anchor"></a>
+					<h3>z</h3>
+					<div class="tsd-signature tsd-kind-icon">z<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1748">godot.d.ts:1748</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Z component of the quaternion.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="identity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> IDENTITY</h3>
+					<div class="tsd-signature tsd-kind-icon">IDENTITY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1800">godot.d.ts:1800</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>value</dt>
+							<dd><p><code>Quat( 0, 0, 0, 1 )</code></p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="cubic_slerp" class="tsd-anchor"></a>
+					<h3>cubic_<wbr>slerp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">cubic_<wbr>slerp<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a>, pre_a<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a>, post_b<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a>, t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1755">godot.d.ts:1755</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a cubic spherical-linear interpolation with another quaternion.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>b: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+								<li>
+									<h5>pre_a: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+								<li>
+									<h5>post_b: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+								<li>
+									<h5>t: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="dot" class="tsd-anchor"></a>
+					<h3>dot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">dot<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1758">godot.d.ts:1758</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the dot product of two quaternions.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>b: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="get_euler" class="tsd-anchor"></a>
+					<h3>get_<wbr>euler</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get_<wbr>euler<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1761">godot.d.ts:1761</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns Euler angles (in the YXZ convention: first Z, then X, and Y last) corresponding to the rotation represented by the unit quaternion. Returned vector contains the rotation angles in the format (X angle, Y angle, Z angle).</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="inverse" class="tsd-anchor"></a>
+					<h3>inverse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">inverse<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1764">godot.d.ts:1764</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the inverse of the quaternion.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="is_equal_approx" class="tsd-anchor"></a>
+					<h3>is_<wbr>equal_<wbr>approx</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is_<wbr>equal_<wbr>approx<span class="tsd-signature-symbol">(</span>quat<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1767">godot.d.ts:1767</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>quat: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="is_normalized" class="tsd-anchor"></a>
+					<h3>is_<wbr>normalized</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is_<wbr>normalized<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1770">godot.d.ts:1770</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns whether the quaternion is normalized or not.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="length" class="tsd-anchor"></a>
+					<h3>length</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">length<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1773">godot.d.ts:1773</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the length of the quaternion.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="length_squared" class="tsd-anchor"></a>
+					<h3>length_<wbr>squared</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">length_<wbr>squared<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1776">godot.d.ts:1776</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the length of the quaternion, squared.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="normalized" class="tsd-anchor"></a>
+					<h3>normalized</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">normalized<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1779">godot.d.ts:1779</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a copy of the quaternion, normalized to unit length.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="set_axis_angle" class="tsd-anchor"></a>
+					<h3>set_<wbr>axis_<wbr>angle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set_<wbr>axis_<wbr>angle<span class="tsd-signature-symbol">(</span>axis<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a>, angle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1782">godot.d.ts:1782</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the quaternion to a rotation which rotates around axis by the specified angle, in radians. The axis must be a normalized vector.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>axis: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+								<li>
+									<h5>angle: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="set_euler" class="tsd-anchor"></a>
+					<h3>set_<wbr>euler</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set_<wbr>euler<span class="tsd-signature-symbol">(</span>euler<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1785">godot.d.ts:1785</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the quaternion to a rotation specified by Euler angles (in the YXZ convention: first Z, then X, and Y last), given in the vector format as (X angle, Y angle, Z angle).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>euler: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="slerp" class="tsd-anchor"></a>
+					<h3>slerp</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">slerp<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a>, t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1788">godot.d.ts:1788</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a spherical-linear interpolation with another quaternion.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>b: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+								<li>
+									<h5>t: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="slerpni" class="tsd-anchor"></a>
+					<h3>slerpni</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">slerpni<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a>, t<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1791">godot.d.ts:1791</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Performs a spherical-linear interpolation with another quaterion without checking if the rotation path is not bigger than 90°.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>b: <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h5>
+								</li>
+								<li>
+									<h5>t: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.quat.html" class="tsd-signature-type">Quat</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="xform" class="tsd-anchor"></a>
+					<h3>xform</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">xform<span class="tsd-signature-symbol">(</span>v<span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Flux159/ECMAScript/blob/10df7db/misc/godot.d.ts#L1794">godot.d.ts:1794</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Transforms the vector <code>v</code> by this quaternion.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>v: <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_godot_d_.godot.vector3.html" class="tsd-signature-type">Vector3</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.aabb.html" class="tsd-kind-icon">AABB</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.basis.html" class="tsd-kind-icon">Basis</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.color.html" class="tsd-kind-icon">Color</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.plane.html" class="tsd-kind-icon">Plane</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolbytearray.html" class="tsd-kind-icon">Pool<wbr>Byte<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolcolorarray.html" class="tsd-kind-icon">Pool<wbr>Color<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolintarray.html" class="tsd-kind-icon">Pool<wbr>Int<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolrealarray.html" class="tsd-kind-icon">Pool<wbr>Real<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolstringarray.html" class="tsd-kind-icon">Pool<wbr>String<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolvector2array.html" class="tsd-kind-icon">Pool<wbr>Vector2<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.poolvector3array.html" class="tsd-kind-icon">Pool<wbr>Vector3<wbr>Array</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.quat.html" class="tsd-kind-icon">Quat</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#w" class="tsd-kind-icon">w</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#x" class="tsd-kind-icon">x</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#y" class="tsd-kind-icon">y</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#z" class="tsd-kind-icon">z</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="_godot_d_.godot.quat.html#identity" class="tsd-kind-icon">IDENTITY</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#cubic_slerp" class="tsd-kind-icon">cubic_<wbr>slerp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#dot" class="tsd-kind-icon">dot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#get_euler" class="tsd-kind-icon">get_<wbr>euler</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#inverse" class="tsd-kind-icon">inverse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#is_equal_approx" class="tsd-kind-icon">is_<wbr>equal_<wbr>approx</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#is_normalized" class="tsd-kind-icon">is_<wbr>normalized</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#length" class="tsd-kind-icon">length</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#length_squared" class="tsd-kind-icon">length_<wbr>squared</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#normalized" class="tsd-kind-icon">normalized</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#set_axis_angle" class="tsd-kind-icon">set_<wbr>axis_<wbr>angle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#set_euler" class="tsd-kind-icon">set_<wbr>euler</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#slerp" class="tsd-kind-icon">slerp</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#slerpni" class="tsd-kind-icon">slerpni</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_godot_d_.godot.quat.html#xform" class="tsd-kind-icon">xform</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.rid.html" class="tsd-kind-icon">RID</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.rect2.html" class="tsd-kind-icon">Rect2</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.transform.html" class="tsd-kind-icon">Transform</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.transform2d.html" class="tsd-kind-icon">Transform2D</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.vector2.html" class="tsd-kind-icon">Vector2</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-namespace">
+						<a href="_godot_d_.godot.vector3.html" class="tsd-kind-icon">Vector3</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+						<a href="../interfaces/_godot_d_.godot.propertyinfo.html" class="tsd-kind-icon">Property<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#godotclass" class="tsd-kind-icon">Godot<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#debug_enabled" class="tsd-kind-icon">DEBUG_<wbr>ENABLED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#debug_methods_enabled" class="tsd-kind-icon">DEBUG_<wbr>METHODS_<wbr>ENABLED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#e" class="tsd-kind-icon">E</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#ln2" class="tsd-kind-icon">LN2</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#sqrt12" class="tsd-kind-icon">SQRT12</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#sqrt2" class="tsd-kind-icon">SQRT2</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#tools_enabled" class="tsd-kind-icon">TOOLS_<wbr>ENABLED</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#abandon_value" class="tsd-kind-icon">abandon_<wbr>value</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#adopt_value" class="tsd-kind-icon">adopt_<wbr>value</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#get_type" class="tsd-kind-icon">get_<wbr>type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#instance_from_id" class="tsd-kind-icon">instance_<wbr>from_<wbr>id</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#load" class="tsd-kind-icon">load</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#register_class" class="tsd-kind-icon">register_<wbr>class</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#register_property" class="tsd-kind-icon">register_<wbr>property</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#register_signal" class="tsd-kind-icon">register_<wbr>signal</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#set_script_icon" class="tsd-kind-icon">set_<wbr>script_<wbr>icon</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#set_script_tooled" class="tsd-kind-icon">set_<wbr>script_<wbr>tooled</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-namespace">
+						<a href="../modules/_godot_d_.godot.html#yield" class="tsd-kind-icon">yield</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-namespace"><span class="tsd-kind-icon">Namespace</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
